@@ -1,10 +1,10 @@
 {
-  "name": "dude",
+  "name": "owl",
   "collider": {
-    "x": 8,
-    "y": 7,
-    "w": 16,
-    "h": 18
+    "x": 6,
+    "y": 4,
+    "w": 20,
+    "h": 21
   },
   "size": {
     "w": 32,
@@ -12,7 +12,5 @@
   },
   "scale": 4,
   "flip": true,
-  "colored": [
-    "Body"
-  ]
+  "colored": ["Body"]
 }

@@ -16,12 +16,12 @@ export const DudesWrapper = () => {
 
     const mikeInfo = {
       color: 'green',
-      displayName: 'Mike',
+      displayName: 'Duckate',
       sprite: 'dude',
     };
 
     const raiderInfo = {
-      sprite: 'sith',
+      sprite: 'agent',
       color: 'green',
       displayName: 'Raider',
     };
@@ -104,28 +104,28 @@ export const DudesWrapper = () => {
     dudes.updateSettings(settings);
 
     await delay(500);
-    dudes.processMessage(mikeMessage('Hi! I am Mike!'));
-    await delay(10000);
+    dudes.processMessage(mikeMessage('Hi! I am Duckate!'));
+    await delay(1000);
 
     dudes.processMessage(mikeMessage('I can do some actions! JUMP!!!'));
-    await delay(2000);
+    await delay(1000);
     dudes.processAction(mikeAction('jump'));
 
-    await delay(8000);
+    await delay(1000);
     dudes.processMessage(mikeMessage('I can dash!'));
-    await delay(2000);
+    await delay(1000);
     dudes.processAction(mikeAction('dash'));
 
-    await delay(8000);
+    await delay(500);
     dudes.processMessage(mikeMessage('I can grow up!'));
-    await delay(2000);
+    await delay(500);
     dudes.processAction(mikeAction('grow'));
 
-    await delay(8000);
+    await delay(500);
     dudes.processMessage(
-      mikeMessage('I can change my skin.\nI want to be a cat!')
+      mikeMessage('I can change my skin.\nI want to become EVIL!')
     );
-    await delay(2000);
+    await delay(500);
     mikeInfo.sprite = 'cat';
     dudes.processAction(mikeAction('sprite', { sprite: 'cat' }));
 

@@ -1,10 +1,10 @@
 {
-  "name": "cat",
+  "name": "duckEvil",
   "collider": {
-    "x": 8,
-    "y": 4,
-    "w": 16,
-    "h": 21
+    "x": 5,
+    "y": 7,
+    "w": 18,
+    "h": 18
   },
   "size": {
     "w": 32,
@@ -12,7 +12,5 @@
   },
   "scale": 4,
   "flip": true,
-  "colored": [
-    "Body"
-  ]
+  "colored": ["Body"]
 }
