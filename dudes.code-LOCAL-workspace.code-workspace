@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../welcome-to-docker"
+    },
+    {
+      "path": "../multi-container-app"
+    }
+  ],
+  "settings": {}
+}

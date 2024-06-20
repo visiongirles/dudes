@@ -15,7 +15,7 @@ export const DudesWrapper = () => {
     };
 
     const mikeInfo = {
-      color: 'red',
+      color: 'green',
       displayName: 'Mike',
       sprite: 'dude',
     };
@@ -159,7 +159,7 @@ export const DudesWrapper = () => {
     <div
       className="border border-border/100"
       ref={initDudes}
-      style={{ height: 480, width: 1000 }}
+      style={{ height: 480, width: 1000, background: 'white' }}
     ></div>
   );
 };
