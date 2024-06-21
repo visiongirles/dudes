@@ -105,27 +105,27 @@ export const DudesWrapper = () => {
 
     await delay(500);
     dudes.processMessage(mikeMessage('Hi! I am Duckate!'));
-    await delay(1000);
+    await delay(5000);
 
     dudes.processMessage(mikeMessage('I can do some actions! JUMP!!!'));
-    await delay(1000);
+    await delay(5000);
     dudes.processAction(mikeAction('jump'));
 
-    await delay(1000);
+    await delay(5000);
     dudes.processMessage(mikeMessage('I can dash!'));
-    await delay(1000);
+    await delay(5000);
     dudes.processAction(mikeAction('dash'));
 
-    await delay(500);
+    await delay(5000);
     dudes.processMessage(mikeMessage('I can grow up!'));
-    await delay(500);
+    await delay(5000);
     dudes.processAction(mikeAction('grow'));
 
-    await delay(500);
+    await delay(5000);
     dudes.processMessage(
       mikeMessage('I can change my skin.\nI want to become EVIL!')
     );
-    await delay(500);
+    await delay(5000);
     mikeInfo.sprite = 'cat';
     dudes.processAction(mikeAction('sprite', { sprite: 'cat' }));
 
