@@ -46,6 +46,14 @@ export type SpriteUserActionEntity = {
   };
 } & UserActionEntity;
 
+export type LevelUpUserActionEntity = {
+  name: 'level_up';
+  data: {
+    sprite: string;
+    level: number;
+  };
+} & UserActionEntity;
+
 export const isJumpUserActionEntity = (
   entity: ActionEntity
 ): entity is JumpUserActionEntity => entity.name == 'jump';
@@ -65,3 +73,7 @@ export const isDashUserActionEntity = (
 export const isSpriteUserActionEntity = (
   entity: ActionEntity
 ): entity is SpriteUserActionEntity => entity.name == 'sprite';
+
+export const isLevelUpUserActionEntity = (
+  entity: ActionEntity
+): entity is SpriteUserActionEntity => entity.name == 'level_up';

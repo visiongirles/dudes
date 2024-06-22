@@ -5,6 +5,7 @@ import {
   isDashUserActionEntity,
   isGrowUserActionEntity,
   isJumpUserActionEntity,
+  isLevelUpUserActionEntity,
   isSpriteUserActionEntity,
 } from '../dto';
 
@@ -55,6 +56,14 @@ export const spriteActionData = {
   }),
 };
 
+export const levelUpActionData = {
+  data: z.object({
+    action: z.object({
+      sprite: z.string(),
+    }),
+  }),
+};
+
 export const getActionableEntityFormSchema = (
   action: ActionEntity,
   schema: ZodObject<ZodRawShape>
@@ -77,6 +86,10 @@ export const getActionableEntityFormSchema = (
 
   if (isSpriteUserActionEntity(action)) {
     return schema.extend(spriteActionData);
+  }
+
+  if (isLevelUpUserActionEntity(action)) {
+    return schema.extend(levelUpActionData);
   }
 
   return schema;
